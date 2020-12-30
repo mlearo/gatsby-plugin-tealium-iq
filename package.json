@@ -1,0 +1,27 @@
+{
+  "name": "gatsby-plugin-tealium-iq",
+  "version": "1.0.0",
+  "description": "Tealium iQ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+"bundleDependencies": false,
+  "dependencies": {
+    "@babel/runtime": "^7.12.5"
+  },
+  "deprecated": false,
+  "description": "Gatsby plugin to add google tagmanager onto a site",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "babel-preset-gatsby-package": "^0.9.0",
+    "cross-env": "^7.0.3",
+    "gatsby-plugin-utils": "^0.6.0"
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "author": "Michael Learo",
+  "license": "ISC"
+}

@@ -2,13 +2,12 @@
 
 exports.onRouteUpdate = function (_, pluginOptions) {
   if (process.env.NODE_ENV === "production" || pluginOptions.includeInDevelopment) {
-    // wrap inside a timeout to ensure the title has properly been changed
-    //setTimeout(function () {
-      //var data = pluginOptions.dataLayerName ? window[pluginOptions.dataLayerName] : window.dataLayer;
-      //var eventName = pluginOptions.routeChangeEventName ? pluginOptions.routeChangeEventName : "gatsby-route-change";
-      //utag.link({
-      //  event: eventName
-      //});
-    //}, 50);
+    setTimeout(function () {
+      var data = pluginOptions.dataLayerName ? window[pluginOptions.dataLayerName] : window.dataLayer;
+      var eventName = pluginOptions.routeChangeEventName ? pluginOptions.routeChangeEventName : "gatsby-route-change";
+      utag.view({
+        event: eventName
+      });
+    }, 50);
   }
 };  

@@ -11,7 +11,7 @@
     "@babel/runtime": "^7.12.5"
   },
   "deprecated": false,
-  "description": "Gatsby plugin to add google tagmanager onto a site",
+  "description": "Gatsby plugin to add Tealium iQ onto a site",
   "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",

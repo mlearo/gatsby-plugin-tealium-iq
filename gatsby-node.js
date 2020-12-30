@@ -19,8 +19,8 @@ exports.onPreInit = function (args, options) {
 exports.pluginOptionsSchema = function (_ref) {
   var Joi = _ref.Joi;
   return Joi.object({
-    includeInDevelopment: Joi.boolean().default(false).description("Include Google Tag Manager when running in development mode."),
-    defaultDataLayer: Joi.alternatives().try(Joi.object(), Joi.function()).default(null).description("Data layer to be set before Google Tag Manager is loaded. Should be an object or a function."),
+    includeInDevelopment: Joi.boolean().default(false).description("Include Tealium iQ when running in development mode."),
+    defaultDataLayer: Joi.alternatives().try(Joi.object(), Joi.function()).default(null).description("Data layer to be set before Tealium iQ is loaded. Should be an object or a function."),
     dataLayerName: Joi.string().description("Data layer name."),
     account :Joi.string().description("Account"),
     profile : Joi.string().description("Profile"),
